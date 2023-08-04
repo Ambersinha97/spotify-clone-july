@@ -1,0 +1,227 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  color: aliceblue;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 85vh;
+}
+
+.left-part {
+  padding-top: 10px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.8rem;
+  background-color: #000000;
+  overflow-y: scroll;
+}
+
+.right-part {
+  overflow-y: scroll;
+  width: 80%;
+
+  background-color: #212121;
+  overflow-y: scroll;
+}
+.logo {
+  width: 140px;
+  margin-left: 30px;
+}
+.home,
+.search,
+.library,
+.playlist,
+.liked-songs {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  border-radius: 5px;
+  width: 95%;
+  transition: all 0.2s ease-in-out;
+}
+
+.home:hover,
+.search:hover,
+.library:hover,
+.playlist:hover,
+.liked-songs:hover {
+  cursor: pointer;
+  background-color: #212121;
+}
+
+.home-container,
+.playlist-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.leftnavh2 {
+  font-size: 13px;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.leftnavimg {
+  width: 22px;
+  margin-right: 15px;
+}
+
+.left-bottom {
+  display: flex;
+  justify-content: space-around;
+}
+.album-img {
+  position: relative;
+  top: 150px;
+}
+
+/* *************Right part***************** */
+.right-part {
+  padding-top: 100px;
+  padding-left: 10px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 48%,
+    rgba(142, 172, 165, 1) 100%
+  );
+  overflow-y: scroll;
+}
+
+.playlist-info {
+  display: flex;
+}
+.p-head {
+  padding-top: 40px;
+}
+.playlist-heading {
+  font-size: 80px;
+}
+.mid-item1 {
+  width: 50px;
+  height: 50px;
+}
+.mid-item2 {
+  width: 40px;
+  height: 40px;
+}
+.playlist-songs-info {
+  width: 98%;
+  text-align: center;
+}
+th {
+  height: 90px;
+}
+#row1 {
+  background-color: #181818;
+}
+td {
+  height: 70px;
+}
+#cell1 {
+  border-radius: 10px 0px 0px 10px;
+}
+#cell2 {
+  border-radius: 0px 10px 10px 0px;
+}
+
+/* *********Bottom Palyer Controls Part************* */
+
+.bottom-part {
+  padding: 40px 20px;
+  width: 100%;
+  height: 15vh;
+  background-color: #181818;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* <!-- ===========Bottom left============== */
+.songName {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.song-name {
+  display: flex;
+  gap: 0.5rem;
+  position: relative;
+}
+.bottom-left-icon {
+  width: auto;
+}
+.songName > div {
+  font-size: 15px;
+  color: whitesmoke;
+}
+
+/* bottom middle */
+.playControls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+}
+.control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.control > img {
+  width: 25px;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: whitesmoke;
+}
+.music-bar {
+  width: 400px;
+}
+.music-played {
+  width: 300px;
+  position: absolute;
+  left: 30px;
+  bottom: 19px;
+}
+.musichov {
+  mix-blend-mode: screen;
+  transition: all 0.2s ease-in;
+}
+.musichov:hover {
+  box-shadow: 1px 1px 20px gray;
+  cursor: pointer;
+}
+/* <!-- ===========Bottom Right============= */
+.volume {
+  background-color: #181818;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.vol {
+  width: 20px;
+  mix-blend-mode: screen;
+  transition: all 0.2s ease-in;
+}
+
+.vol:hover {
+  box-shadow: 1px 1px 10px gray;
+  cursor: pointer;
+}
